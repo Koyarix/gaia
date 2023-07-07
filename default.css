@@ -1,0 +1,578 @@
+/*********************************************************************************/
+/* PAGE PRINCIPALE                                                                       */
+/*********************************************************************************/
+body {
+	font-family:"Montserrat Alternates";
+	margin: 0px;
+	padding: 0px;
+	background: darkseagreen;
+	font-size: 12pt;
+	font-weight: 300;
+	color: #000000;
+}
+
+#header-wrapper {
+	background: url(images/banner.jpg) no-repeat center;
+	background-size: cover;
+	border-top: 10px solid darkseagreen; /*bande verte*/
+}
+#header {
+	text-align : center;
+	padding: 2em 0em;
+}
+
+#logo_gaia {
+	position: absolute;
+	top: 0;
+	left: 50px;
+	padding: 0.5em 0em;
+	background: darkseagreen;
+	border-radius: 0px 0px 20px 20px;
+}
+.logo_gaia {
+	margin-top: 20px;
+	width:120px;
+	filter: invert();
+}
+
+nav {
+	padding: 0px 0 50px 0;
+	margin :0;
+}
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	margin: 0 10px;
+	font-size: 20px;
+}
+.menu-button:hover {
+	background: darkseagreen;
+	border-radius: 5px;
+}
+.menu-button {
+	background: none;
+	border : none;
+	color: white;
+	padding: 10px 20px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	top: 10px; left: 0px;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+.menu-button_actif {
+	background: darkseagreen;
+	border : none;
+	color: white;
+	padding: 10px 20px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	top: 10px; left: 0px;
+	font-family: 'Montserrat Alternates', sans-serif;
+	border-radius: 5px;
+
+}
+
+#banner {
+	padding: 7em 0 10em 0;
+	text-align: center;
+}
+#banner h1{
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 4em;
+	color: transparent;
+	font-family: "Arial";
+	-webkit-text-stroke: 2px white;
+	text-stroke: 2px white;
+	letter-spacing: 7px;
+}
+#banner p{
+	margin : 50px 250px 0 250px;
+	color: white;
+	text-align: center;
+	font-family: "Montserrat Alternates";
+}
+
+.logo_reseau {
+	width:50px;
+	padding: 20px;
+	filter : invert();
+}
+
+footer {
+	background-color: darkseagreen;
+	letter-spacing: 0.20em;
+	color: white;
+	padding: 2em 0 2em 0;
+	margin: 0 80px;
+}
+.logo_footer {
+	width: 30px;
+	filter : invert();
+}
+.column_footer {
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+.column_footer h2{
+	text-align: left;
+	font-family: "Josefin Sans";
+	text-transform: uppercase;
+}
+.column_footer h3{
+	text-align: left;
+	font-family: "Montserrat Alternates";
+	font-size: 12px;
+}
+.column_footer p{
+	text-align: right;
+	font-family: "Montserrat Alternates";
+	font-size: 12px;
+}
+.column_footer a{
+	text-decoration: none;
+	color: lightgrey;
+	text-align: right;
+}
+
+
+/*********************************************************************************/
+/* INDEX                                                                          */
+/*********************************************************************************/
+
+.section2 {
+	padding: 60px 0 70px 0;
+	background-color: white;
+	text-align: center;
+}
+.section2 h2 {
+	color: black;
+	text-align : center;
+	font-size: 60px;
+	font-style: normal;
+	font-family: 'Josefin Sans',sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing : 5px;
+}
+.section2 p {
+	color: black;
+	text-align : center;
+	font-size: 16px;
+	margin : 40px 200px;
+	line-height: 30px;
+}
+.cta-button {
+	background-color: white;
+	color: black;
+	border: black;
+	padding: 10px 20px;
+	border-radius: 2px;
+	border-width: 1.5px;
+	border-style: solid;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+.cta-button:hover {
+	background-color: darkseagreen;
+	color : white;
+	border-color: darkseagreen;
+}
+
+.section3 {
+	padding: 80px 0 40px 0;
+	background-color: darkseagreen;
+}
+.section3 h2 {
+	color: white;
+	text-align : center;
+	font-size: 60px;
+	font-family: 'Josefin Sans',sans-serif;
+	font-weight: 1000;
+	letter-spacing : 5px;
+}
+.section3 p {
+	color: white;
+	text-align : center;
+	margin : 20px;
+	font-size: 17px;
+	font-weight: 200;
+}
+.container2 {
+	display: flex;
+	justify-content: center; /* Centre les éléments horizontalement */
+	margin : 40px 180px;
+}
+.bulle {
+	width:200px;
+	border-radius:50%;
+	padding: 50px 0 50px 0;
+	filter : saturate(0%);
+}
+.column {
+	text-align: center;
+	float: right;
+	width: 30%;
+	margin: 0 10px; /* Ajoute une marge entre les colonnes */
+
+}
+.column h2{
+	color : white;
+	font-family: 'Josefin Sans',sans-serif;
+	text-transform: uppercase;
+	font-size: 26px;
+	letter-spacing : 3px;
+}
+.column p{
+	color : white;
+	font-weight: 200;
+	text-align: justify;
+	font-size: 18px;
+}
+
+.section4 {
+	padding: 80px 0 40px 0;
+	background-color: white;
+	text-align: center;
+}
+.section4 h1 {
+	color: black;
+	text-align : center;
+	font-size: 30px;
+	font-family: 'Josefin Sans',sans-serif;
+	font-weight: 800;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin : 40px 0 90px 0 ;
+}
+.column_blog {
+	float: right;
+	width: 30%;
+	margin: 0 0px; /* Ajoute une marge entre les colonnes */
+}
+.column_blog h2{
+	text-align: left;
+	color : black;
+	font-family: 'Josefin Sans',sans-serif;
+	text-transform: uppercase;
+	font-size: 22px;
+	letter-spacing : 3px;
+	margin : 10px 16px 10px 16px;
+}
+.column_blog h3{
+	font-family: 'Josefin Sans',sans-serif;
+	text-transform: uppercase;
+	font-size: 15px;
+	text-align: center;
+}
+.column_blog p{
+	color : black;
+	font-weight: 200;
+	text-align: justify;
+	font-size: 15px;
+	margin : 0 16px 0 16px;
+}
+.cta-button1 {
+	background-color: white;
+	color: black;
+	border: black;
+	padding: 10px 20px;
+	border-radius: 2px;
+	border-width: 1.5px;
+	border-style: solid;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+.cta-button1:hover {
+	background-color: black;
+	color : white;
+	border-color: black;
+}
+
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+a {
+	color: #CC0000;
+}
+a:hover {
+	text-decoration: none;
+}
+
+.container {
+	margin: 0em;
+	text-align:center ;
+}
+
+.image {
+	display: inline-block;
+}
+.image img {
+	display: block;
+	width: 100%;
+}
+
+/*********************************************************************************/
+/* DOUBLE-CURSUS                                                                       */
+/*********************************************************************************/
+
+.section1_doublecursus {
+	padding: 100px 0 100px 0;
+	background-color: darkseagreen;
+}
+.section1_doublecursus h2 {
+	color: white;
+	text-align : center;
+	font-size: 60px;
+	font-family: 'Josefin Sans',sans-serif;
+	line-height: 55px;
+	letter-spacing : 15px;
+}
+
+.section2_doublecursus {
+	padding: 70px 0 70px 0;
+	background-color: white;
+}
+.section2_doublecursus h2 {
+	color: black;
+	text-align : center;
+	font-size: 30px;
+	font-family: 'Josefin Sans',sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing : 5px;
+	margin: 20px 0 30px 0;
+}
+.section2_doublecursus p {
+	color: black;
+	text-align : justify;
+	margin: 0 250px;
+}
+
+.section3_doublecursus {
+	padding: 50px 0;
+	background-color: #CCBDAC;
+}
+.section3_doublecursus p {
+	color: black;
+	text-align : justify;
+	margin: 0 250px;
+}
+.section3_doublecursus h2 {
+	color: black;
+	text-align : right;
+	margin: 30px 250px 10px 250px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.section3_doublecursus h3 {
+	color: white;
+	text-align : center;
+	font-size: 30px;
+	font-family: 'Josefin Sans',sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing : 5px;
+	margin: 20px 0 30px 0;
+}
+.section3_doublecursus h1 {
+	 color: black;
+	 text-align : center;
+	 margin: 50px 60px 50px 60px;
+	font-size: 30px;
+	font-family: 'Josefin Sans',sans-serif;
+	font-weight: 800;	text-transform: uppercase;
+ }
+.section3_doublecursus a {
+	color: dimgrey;
+	text-decoration: none;
+	font-style: italic;
+}
+
+.section4_doublecursus {
+	padding: 100px 0;
+	background-color: white;
+
+}
+.section4_doublecursus p {
+	color: black;
+	text-align : justify;
+	margin: 0px 250px;
+}
+.section4_doublecursus a {
+	color: dimgrey;
+	text-decoration: none;
+	font-style: italic;
+}
+.section4_doublecursus h3 {
+	color: black;
+	text-align : center;
+	font-size: 30px;
+	font-family: 'Josefin Sans',sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing : 5px;
+	margin: 20px 0 30px 0;
+}
+
+
+/*********************************************************************************/
+/* EVENEMENTS                                                                       */
+/*********************************************************************************/
+.section1_evenements {
+	padding: 50px 0 100px 0;
+	background-color: white;
+}
+.section1_evenements p {
+	text-align: center;
+	margin: 0 290px;
+}
+
+.container_event {
+	display: flex;
+	justify-content: center; /* Centre les éléments horizontalement */
+	margin : 40px 180px;
+}
+
+.column_evenements {
+	width: 45%;
+	float: right;
+	margin: 0 0; /* Ajoute une marge entre les colonnes */
+	text-align: center;
+}
+.column_evenements h2{
+	text-align: center;
+	color : black;
+	font-family: 'Josefin Sans',sans-serif;
+	text-transform: uppercase;
+	font-size: 26px;
+	letter-spacing : 3px;
+	margin : 20px 55px 0px 55px;
+}
+
+.image-container {
+	position: relative;
+	display: inline-block;
+}
+
+.image-container img {
+	display: block;
+	width: 400px;
+	opacity: 1;
+	filter : saturate(0);
+}
+
+.image-container .image-text {
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	transform: translate(-5%, -50%);
+	color: black;
+	font-size: 23px;
+	font-family: "Montserrat Alternates";
+	text-align: left;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.3s;
+}
+
+.image-container:hover .image-text {
+	visibility: visible;
+	opacity: 1;
+}
+.image-container:hover img {
+	opacity: 0.3;
+}
+
+/*********************************************************************************/
+/* BOUTIQUE                                                                       */
+/*********************************************************************************/
+.container_envente {
+	display: flex;
+	justify-content: center; /* Centre les éléments horizontalement */
+	margin : 20px 250px;
+	/*border-style : solid;*/
+}
+.section_envente {
+	padding: 50px 0 1000px 0;
+	background-color: white;
+}
+.section_envente h2 {
+	color: black;
+	font-size: 30px;
+	font-family: 'Josefin Sans',sans-serif;
+	font-weight: 800;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin: 80px 250px 0 250px;
+	text-align: center;
+}
+.section_envente h3 {
+	color: black;
+	font-size: 30px;
+	font-family: 'Josefin Sans',sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin: 50px 250px;
+	text-align: left;
+}
+.column_envente1 {
+	width: 30%;
+	margin : 10px 0px 0px 0px;
+	/*border-style : solid;*/
+}
+.column_envente1 h2 {
+	text-align: left;
+	margin : 0px 0px 0px 0px;
+	font-size: 25px;
+}
+.column_envente2 {
+	width: 68%;
+	margin : 0px 50px 0px 50px;
+	/*border-style : solid;*/
+}
+.column_envente2 p {
+	text-align: justify;
+	font-size: 14px;
+}
+.column_envente3 {
+	width: 40%;
+	/*border-style : solid;*/
+}
+.column_envente3 p {
+	text-align: right;
+	margin : 0px 30px 0px 0px;
+	font-size: 22px;
+
+}
+.column_envente1bis {
+	width: 75%;
+	margin : 0px 0px 0px 0px;
+	/*border-style : solid;*/
+}
+.column_envente1bis h2 {
+	font-size: 18px;
+	text-align: left;
+	margin : 10px 0px 0px 0px;
+}
+.column_envente1bis p {
+	font-size: 14px;
+	text-align: justify;
+	margin : 0px 0px 0px 0px;
+}
+
+/*********************************************************************************/
+/* BLOG                                                                       */
+/*********************************************************************************/
+.separator {
+	border-bottom: 1px solid #ccc;
+	margin: 50px 200px 50px 200px;
+}
+
